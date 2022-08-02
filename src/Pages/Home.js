@@ -7,7 +7,7 @@ import { store } from './Details'
 
 const Home = () => {
 
-  const [detail,setDetail] = useContext(store);
+  const [detail, ] = useContext(store);
   return (
 
     <div>

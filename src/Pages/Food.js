@@ -5,7 +5,7 @@ import Card from '../Component/Card'
 import SmallCard from '../Component/SmallCard';
 
 const Food = () => {
-    const [detail, setDetail] = useContext(store);
+    const [detail, ] = useContext(store);
     console.log(detail);
     return (
         <div>
@@ -28,7 +28,7 @@ const Food = () => {
 
                 <div className="sidebar">
                     {
-                        detail.filter((article) => { return article.category === "Food" }).map((n) => (
+                        detail.filter((article) => { return article.category === "Fitness" }).map((n) => (
                             <SmallCard
                                 articleid={n.id}
                                 imgUrl={n.Image}
